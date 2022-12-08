@@ -1,7 +1,16 @@
 export const allProducts = `
-query {
-    shop {
-        name
+{
+    products(first: 10) {
+      edges {
+        node {
+          id,
+          title,
+          description,
+          createdAt,
+          updatedAt
+        }
+      }
     }
-}
+  }
+  
 `
