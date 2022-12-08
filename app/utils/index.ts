@@ -1,0 +1,1 @@
+export { ShopifyData } from './shopify'
